@@ -1,0 +1,15 @@
+syntax = "proto3";
+package data;
+
+/* Для регистрации клиента */
+message Module {
+  string name = 1;
+  string type = 2;
+}
+
+/* Ответ регистрации клиента */
+message ModuleResp {
+  string error = 1;
+  string uri = 2;
+  string uri_client = 3;
+}
